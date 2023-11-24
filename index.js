@@ -13,6 +13,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
+app.get("/", (req, res) => {
+  return res.json({
+    message: "Hello Whatsapp",
+  });
+});
+
 app.use("/api/v1", routes);
 
 const port = process.env.PORT || 5000;
