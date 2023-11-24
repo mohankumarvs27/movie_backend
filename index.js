@@ -15,7 +15,7 @@ app.use(cookieParser());
 
 app.get("/", (req, res) => {
   return res.json({
-    message: "Hello Whatsapp",
+    message: "Hello Movie App",
   });
 });
 
